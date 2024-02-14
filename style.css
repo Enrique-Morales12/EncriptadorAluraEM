@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: rgba(243, 245, 252, 1);
+}
+
+.header{
+    width: 100%;
+    text-align: start;
+    padding-top: 20px;
+}
+
+.header h1{
+    font-size: 64px;
+    color: #0A3871;
+}
+
+.content_1{
+    width: 100%;
+    text-align: center;
+}
+
+.content_1 textarea{
+    background-color: rgba(243, 245, 252, 1);
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 18px;
+    font-size: 20px;
+    resize: none;
+    outline: none;
+}
+
+textarea::placeholder{
+    padding: 5px;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+
+.content_1 p{
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+button{
+    border: 2px solid #0A3871;
+    background-color: #0A3871;
+    color: white;
+    width: 30%;
+    height: 60px;
+    padding: 5px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    border-radius: 24px;
+    font-size: 20px;
+}
+
+.btndesencriptar{
+    border: 2px solid #0A3871;
+    background-color: rgba(243, 245, 252, 1);
+    color: #0A3871;;
+    width: 30%;
+    height: 60px;
+    padding: 5px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    border-radius: 24px;
+    font-size: 20px;
+}
+
+.texto_retorno{
+    background-color:white ;
+    text-align: center;
+    margin: 0 auto;
+    width: 340px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    
+    box-shadow:  5px 5px rgba(0,0,0,0.08);
+    /*saltos de linea */
+    word-wrap: break-word;
+}
+.texto_retorno p{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: rgba(73, 80, 87, 1);
+    
+}
+
+.texto_retorno img{
+    width: 180px;
+    height: 240px;
+    padding-top: 40px;
+}
+
+.texto_retorno button{
+    background-color: white;
+    color: #0A3871;
+    font-weight: bold;
+    border-width: 2px;
+}
+
+.textoCopiado{
+    font-size: 40px;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    padding-top: 110px;
+    padding-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bold{
+    font-size: 24px;
+    color: rgba(52, 58, 64, 1);
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+
+#copiar{
+    
+    background-color: white;
+    color: #0A3871;
+    border-color: #0A3871;
+}
+
+.animacion{
+    animation: vibrate 1s linear infinite;
+    color: #0A3871;
+    font-weight: bold;
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(3px); }
+  }
+
+
+
+.e{
+    margin: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    color: rgba(73, 80, 87, 1);
+
+}
+
+
+
+/* Teléfonos */
+
+@media only screen and (max-width: 840px){
+    button{
+        border: 2px solid #0A3871;
+        background-color: #0A3871;
+        color: white;
+        width: 40%;
+        height: 60px;
+        padding: 5px 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px;
+        border-radius: 24px;
+        font-size: 18px;
+    }
+
+    .content_1 p{
+        font-size: 15px;
+    }
+
+    .textoCopiado{
+        font-size: 20px;
+    }
+    .content_1 textarea {
+        width: 350px;
+    }
+    footer p{
+        font-size: 13px;
+    }
+    footer img{
+        width: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .texto_retorno{
+        padding-top: 5px;
+    }
+}
+
+
+@media only screen and ((min-width: 840px) and (max-width: 970px)){
+    h1{
+        text-align: left;
+        margin-left: 85px;
+    }
+    main{
+        display: flex;
+        height: 495px;
+    }
+    .content_1{
+        flex: 1.5;
+
+    }
+    .content_2{
+        flex: 1;
+    }
+    .content_1 textarea{
+        width: 70%;
+    }
+    .texto_retorno{
+        width: 70%;
+        height: 400px;
+        border-radius: 10px;
+        padding-top: 5px;
+    }
+    #copiar{
+        width: 50%;
+        font-size: 16px;
+    }
+
+    button{
+        font-size: 16px;
+        height: 50px;
+    }
+    .content_1 p{
+        font-size: 15px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
+
+
+@media only screen and (min-width: 970px){
+    main{
+        display: flex;
+        height: 495px;
+    }
+    .content_1{
+        flex: 2;
+
+    }
+    .content_2{
+        flex: 1;
+    }
+    .content_1 textarea{
+        width: 77%;
+    }
+    .texto_retorno{
+        width: 80%;
+        height: 400px;
+        margin-left: 40px;
+        border-radius: 10px;
+        padding-top: 5px;
+    }
+    h1{
+        text-align: left;
+        margin-left: 100px;
+    }
+    button{
+        width: 20%;
+    }
+    #copiar{
+        width: 30%;
+        font-size: 20px;
+    }
+    .content_1 p{
+        font-size: 18px;
+    }
+}

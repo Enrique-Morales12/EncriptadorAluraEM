@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador EM</title>
+</head>
+<body>
+    <div class="header">
+        <img src="img/Logo-1.png" alt="">
+    </div>
+    <main>
+        <section class="content_1">
+            <textarea cols="28" rows="13" placeholder="Ingrese el texto aquí" id="textoInicial"></textarea>
+            <p class="advertencia"><img src="img/bi_exclamation-circle-fill.png" class="changeColor"> Solo letras minúsculas y sin acentos</p>
+            <div class="buttoms">
+            <button class="btnencriptar" id="encriptar" onclick="encriptarTexto()">Encriptar</button>
+            <button class="btndesencriptar" id="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+        </div></section>
+        <div class="content_2">
+            <div class="texto_retorno" id="inicial">
+                <img src="img/Muneco.png">
+                <p class="bold">Ningún mensaje fue encontrado </p>
+                <p class="e">Ingrese el texto que desee encriptar o desencriptar.</p>
+            </div>
+            <div class="texto_retorno" id="final" hidden="">
+                <p class="textoCopiado"></p>
+                <div>
+                    <button id="copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
